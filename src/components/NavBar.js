@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+
 
 function NavBar() {
     return (
@@ -9,6 +12,9 @@ function NavBar() {
             */}
             <menu>drop down menu</menu>
             <h1>WV</h1>
+            <Link to='/createpost'></Link>
+            <Link to='/displayallposts'></Link>
+            
         </div>
     );
 }

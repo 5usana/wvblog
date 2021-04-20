@@ -25,7 +25,7 @@ function CreatePost(props) {
         ></textarea>
         <br />
         <br />
-        <button>Save Post</button>
+        <button> Publish </button>
       </form>
       </>
     );

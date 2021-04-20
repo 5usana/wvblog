@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import CreatePost from './CreatePost';
+import Post from './Post';
 
 function DisplayAllPosts() {
     const [title, setTitle] = useState("");
@@ -22,6 +23,7 @@ function DisplayAllPosts() {
     };
 
     const toggleCreateNewPost =()=>{
+        // conditional rendering
         setIsCreateNewPost(!isCreateNewPost)
     }
 
@@ -43,20 +45,35 @@ function DisplayAllPosts() {
                 getTitle= {getTitle}
                 getContent= {getContent}
                 savePost= {savePost}
-                />
-                
+                />    
             </>
         );
     }  
     return (
         <>
-        <h2>ALL POSTS</h2>
-        <br />
-        <br />
-        <button onClick={toggleCreateNewPost}>Create New</button>
-        </>
-    )
+        <h2> Postings </h2>
+        {!allPosts.length ? (
+        <div>
+          <h3>let it flow... </h3>
+        </div>
+      ) : (
+        allPosts.map(eachPost => {
+          return (
+            <Post
+              id={eachPost.id}
+              key={eachPost.id}
+              title={eachPost.title}
+              content={eachPost.content}
+            />
+          );
+        })
+      )}
 
+      <br />
+      <br />
+      <button onClick={toggleCreateNewPost}>Create New</button>
+    </>
+  );
 };
 
 export default DisplayAllPosts;

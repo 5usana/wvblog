@@ -9,13 +9,13 @@ function App() {
   return (
     <>
       <Router>
-				<Switch>
-					<Route exact path='/' render={LandingPage} />
-					<Route path='/about' render={About} />
-					<Route path='/post' render={CreatePost} />
-					<Route exact path='/log' component={DisplayAllPosts} />
-				</Switch>
-			</Router>
+			<Switch>
+				<Route exact path='/' render={LandingPage} />
+				<Route path='/about' render={About} />
+				<Route path='/post' render={CreatePost} />
+				<Route exact path='/log' component={DisplayAllPosts} />
+			</Switch>
+		</Router>
     </>
   );
 }

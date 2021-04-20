@@ -1,5 +1,6 @@
 import React from 'react';
 import susana from '../images/avatar-susana.png';
+import NavBar from './NavBar';
 
 function About() {
     return (
@@ -7,6 +8,7 @@ function About() {
           <h1>Meet Susana</h1>
 			<section>
 				<figure>
+					<NavBar />
 					<a href='https://www.linkedin.com/in/susanacmartins/' target='blank'>
 					<img src={susana} alt='susana avatar' />	
 					</a>

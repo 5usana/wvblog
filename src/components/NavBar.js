@@ -1,18 +1,26 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+
 
 
 
 function NavBar() {
+    const [navbarOpen, setNavbarOpen] = useState(false);
+
+    const handleToggle = () => {
+        setNavbarOpen(!navbarOpen)
+    };
+
     return (
-        <div>
-            
-            <menu>drop down menu</menu>
+        <nav className='navBar'>
             <h1>WV</h1>
-            <Link to='/createpost'></Link>
-            <Link to='/displayallposts'></Link>
+            <button onClick={handleToggle}>{navbarOpen ? 'Close' : 'Open'}</button>
+            <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
+
+            </ul>
+
             
-        </div>
+            
+        </nav>
     );
 }
 

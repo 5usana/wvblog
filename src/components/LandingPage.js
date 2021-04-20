@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from './NavBar';
+import NavBar from './NavBar'
 
 
 
@@ -15,17 +15,17 @@ function LandingPage() {
     );
 }
 
-function Footer() {
-	let currentyear = new Date().getFullYear();
-	return (
-		<footer>
-			<hr />
-			<p className='footer-text'>{currentyear} Copyright ⓒ </p>
-			{/* <Link className='footer-text' to='/about'>
-				5usana
-			</Link> */}
-		</footer>
-	);
-}
+// function Footer() {
+// 	let currentyear = new Date().getFullYear();
+// 	return (
+// 		<footer>
+// 			<hr />
+// 			<p className='footer-text'>{currentyear} Copyright ⓒ </p>
+// 			<Link className='footer-text' to='/about'>
+// 				5usana
+// 			</Link>
+// 		</footer>
+// 	);
+// }
 
 export default LandingPage;

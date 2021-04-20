@@ -1,8 +1,10 @@
 import React from 'react';
+import NavBar from './NavBar';
 
 function CreatePost(props) {
     return (
         <>
+        <NavBar />
         <form onSubmit={props.savePost}>
         <h1>Create New Post</h1>
         <input

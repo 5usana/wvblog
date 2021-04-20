@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import CreatePost from './CreatePost';
 import Post from './Post';
 
+
 function DisplayAllPosts() {
     const [title, setTitle] = useState("");
     const [content, setContent] = useState("");

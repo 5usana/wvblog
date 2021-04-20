@@ -1,18 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useState, Link } from 'react-router-dom';
 
 
 
 function NavBar() {
+    const [navbarOpen, setNavbarOpen] = useState(false);
+
     return (
-        <div>
-            
-            <menu>drop down menu</menu>
+        <nav className='navBar'>
             <h1>WV</h1>
+            <button>{navbarOpen ? 'Close' : 'Open'}</button>
+            <ul>
+
+            </ul>
+            
             <Link to='/createpost'></Link>
             <Link to='/displayallposts'></Link>
             
-        </div>
+        </nav>
     );
 }
 

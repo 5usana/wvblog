@@ -19,16 +19,6 @@ function NavBar() {
 						WV
 					</button>
 				</Link>
-                <Link to='/about'>
-					<button
-						className='primary'
-						width='348px'
-						size='1.5rem'
-						margin='0'
-						height='56px'>
-						About
-					</button>
-				</Link>
                 <Link to='/post'>
 					<button
 						className='secondary'
@@ -47,6 +37,16 @@ function NavBar() {
 						margin='0'
 						height='56px'>
 						Entries
+					</button>
+				</Link>
+                <Link to='/about'>
+					<button
+						className='primary'
+						width='348px'
+						size='1.5rem'
+						margin='0'
+						height='56px'>
+						About
 					</button>
 				</Link>
 

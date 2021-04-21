@@ -5,10 +5,10 @@ import NavBar from './NavBar';
 function About() {
     return (
         <>
-          <h1>Meet Susana</h1>
+			<NavBar />
+          	<h1>Meet Susana</h1>
 			<section>
 				<figure>
-					<NavBar />
 					<a href='https://www.linkedin.com/in/susanacmartins/' target='blank'>
 					<img src={susana} alt='susana avatar' />	
 					</a>

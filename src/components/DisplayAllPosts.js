@@ -56,21 +56,21 @@ function DisplayAllPosts() {
         <NavBar />
         <h2> Postings </h2>
         {!allPosts.length ? (
-        <div>
+          <div>
           <h3>let it flow... </h3>
         </div>
       ) : (
         allPosts.map(eachPost => {
           return (
             <Post
-              id={eachPost.id}
-              key={eachPost.id}
-              title={eachPost.title}
-              content={eachPost.content}
+            id={eachPost.id}
+            key={eachPost.id}
+            title={eachPost.title}
+            content={eachPost.content}
             />
-          );
-        })
-      )}
+            );
+          })
+          )}
 
       <br />
       <br />

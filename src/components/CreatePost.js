@@ -3,6 +3,7 @@ import NavBar from './NavBar';
 
 function CreatePost(props) {
     return (
+        // <React.Fragment> </React.Fragment> better than divs- less memory usage
         <>
         <NavBar />
         <form onSubmit={props.savePost}>

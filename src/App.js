@@ -12,8 +12,8 @@ function App() {
 			<Switch>
 				<Route exact path='/' render={LandingPage} />
 				<Route path='/about' component={About} />
-				<Route path='/post' component={CreatePost} />
-				<Route exact path='/log' component={DisplayAllPosts} />
+				<Route path='/post' render={CreatePost} />
+				<Route path='/log' component={DisplayAllPosts} />
 			</Switch>
 		</Router>
     </>

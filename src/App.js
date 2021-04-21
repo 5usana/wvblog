@@ -12,8 +12,10 @@ function App() {
 			<Switch>
 				<Route exact path='/' render={LandingPage} />
 				<Route path='/about' component={About} />
-				<Route path='/post' render={CreatePost} />
+
+				{/* DisplayAllPosts = parent to Post, CreatePost, & ModifyPost, not sure how to route these correctly */}
 				<Route path='/log' component={DisplayAllPosts} />
+				<Route path='/post' render={CreatePost} />
 			</Switch>
 		</Router>
     </>

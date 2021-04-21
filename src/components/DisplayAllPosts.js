@@ -3,8 +3,10 @@ import CreatePost from './CreatePost';
 import Post from './Post';
 import NavBar from './NavBar';
 
+//Parent component to Post, CreatePost & ModifyPost
 
 function DisplayAllPosts() {
+    // Hooks- useState [variable, updater function]
     const [title, setTitle] = useState("");
     const [content, setContent] = useState("");
     const [allPosts, setAllPosts] = useState([]);
@@ -24,24 +26,31 @@ function DisplayAllPosts() {
     console.log(content);
     };
 
+    // toggles between true and false state of isCreateNewPost 
     const toggleCreateNewPost =()=>{
-        // conditional rendering
+        // conditional rendering- renders component only when condition is met
         setIsCreateNewPost(!isCreateNewPost)
     }
 
+    // function saves captured input data into allPosts state variable
     const savePost = (event) => {
         event.preventDefault();
+        // each post is assigned a unique id
         const id = Date.now();
+        // spread operator appends data to allPosts state
         setAllPosts([...allPosts, {title, content, id }]);
         console.log(allPosts);
+        // clear input value of title/content once post is published
         getTitle.current.value = "";
         getContent.current.value = "";
         toggleCreateNewPost()
       };
+    // render CreateNewPost component when user clicks  create new and remove once published button is clicked
     if(isCreateNewPost){
         return (
             <> 
                 <CreatePost 
+                // functions passed through props
                 savePostTitle = {savePostTitle}
                 savePostContent = {savePostContent}
                 getTitle= {getTitle}
@@ -74,6 +83,7 @@ function DisplayAllPosts() {
 
       <br />
       <br />
+
       <button onClick={toggleCreateNewPost}>Create New</button>
     </>
   );

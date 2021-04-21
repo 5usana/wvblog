@@ -11,6 +11,8 @@ function DisplayAllPosts() {
     const [content, setContent] = useState("");
     const [allPosts, setAllPosts] = useState([]);
     const [isCreateNewPost, setIsCreateNewPost] = useState(false);
+    const [isModifyPost, setIsModifyPost] = useState(false);
+    const [editPostId, setEditPostId] = useState("");
     // Initialize useRef
     const getTitle = useRef();
     const getContent = useRef();
@@ -31,6 +33,35 @@ function DisplayAllPosts() {
         // conditional rendering- renders component only when condition is met
         setIsCreateNewPost(!isCreateNewPost)
     }
+
+     // toggles between true and false state of ModifyPost 
+    const toggleModifyPostComponent = () => {
+      setIsModifyPost(!isModifyPost)
+    }
+
+    // saves edited post to id, toggles modifyPost
+    const editPost = id => {
+      setEditPostId(id);
+      toggleModifyPostComponent();
+    };
+  
+    // updates post after user makes modifications
+    const updatePost = (event) => {
+      event.preventDefault();
+      const updatedPost = allPosts.map(eachPost => {
+        if (eachPost.id === editPostId) {
+          return {
+            // (...) rest syntax to edit title and content, NOT id. if nothing is modified then the original post will be shown
+            ...eachPost,
+            title: title || eachPost.title,
+            content: content || eachPost.content
+          };
+        }
+        return eachPost;
+      });
+      setAllPosts(updatedPost);
+      toggleModifyPostComponent();
+    };
 
     // function saves captured input data into allPosts state variable
     const savePost = (event) => {
@@ -64,11 +95,13 @@ function DisplayAllPosts() {
         <>
         <NavBar />
         <h2> Postings </h2>
+        {/* if allPosts is empty, lrt it flow will display */}
         {!allPosts.length ? (
           <div>
           <h3>let it flow... </h3>
         </div>
       ) : (
+        // if allPosts contains entries .map() will display entries
         allPosts.map(eachPost => {
           return (
             <Post

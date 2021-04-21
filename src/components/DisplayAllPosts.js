@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import CreatePost from './CreatePost';
 import Post from './Post';
+import NavBar from './NavBar';
 
 
 function DisplayAllPosts() {
@@ -52,6 +53,7 @@ function DisplayAllPosts() {
     }  
     return (
         <>
+        <NavBar />
         <h2> Postings </h2>
         {!allPosts.length ? (
         <div>

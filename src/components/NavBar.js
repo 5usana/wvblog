@@ -19,7 +19,7 @@ function NavBar() {
 						WV
 					</button>
 				</Link>
-                <Link to='/post'>
+                {/* <Link to='/post'>
 					<button
 						className='secondary'
 						width='348px'
@@ -28,15 +28,15 @@ function NavBar() {
 						height='56px'>
 						Post
 					</button>
-				</Link>
-                <Link to='/log'>
+				</Link> */}
+                <Link to='/blog'>
 					<button
 						className='log'
 						width='348px'
 						size='1.5rem'
 						margin='0'
 						height='56px'>
-						Entries
+						Blog
 					</button>
 				</Link>
                 <Link to='/about'>

@@ -45,6 +45,14 @@ function DisplayAllPosts() {
       setEditPostId(id);
       toggleModifyPostComponent();
     };
+
+    // deletes post by id
+    const deletePost = id => {
+      const modifiedPost = allPosts.filter(eachPost => {
+        return eachPost.id !== id;
+      });
+      setAllPosts(modifiedPost)
+    };
   
     // updates post component after user makes modifications
     const updatePost = (event) => {
@@ -126,6 +134,7 @@ function DisplayAllPosts() {
               title={eachPost.title}
               content={eachPost.content}
               editPost={editPost}
+              deletePost={deletePost}
             />
           );
         })

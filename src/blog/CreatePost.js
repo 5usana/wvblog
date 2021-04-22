@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from './NavBar';
+import NavBar from '../components/NavBar';
 
 // props -data as functions or state passed from parent to child component
 function CreatePost(props) {

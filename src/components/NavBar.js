@@ -9,6 +9,26 @@ function NavBar() {
     return (
         <nav className='navBar'>
             <ul>
+				<Link to='/signin'>
+					<button
+						className='SignIn'
+						width='348px'
+						size='1.5rem'
+						margin='0'
+						height='56px'>
+						Sign In
+					</button>
+				</Link>
+				<Link to='/signup'>
+					<button
+						className='SignUp'
+						width='348px'
+						size='1.5rem'
+						margin='0'
+						height='56px'>
+						Sign In
+					</button>
+				</Link>
                 <Link to='/'>
 					<button
 						className='Home'

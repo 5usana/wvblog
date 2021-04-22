@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import CreatePost from './CreatePost';
 import Post from './Post';
-import NavBar from './NavBar';
+import NavBar from '../components/NavBar';
 
 //Parent component to Post, CreatePost & ModifyPost
 

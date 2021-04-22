@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import CreatePost from './CreatePost';
 import Post from './Post';
 import NavBar from '../components/NavBar';
+import ModifyPost from './ModifyPost';
 
 //Parent component to Post, CreatePost & ModifyPost
 
@@ -45,7 +46,7 @@ function DisplayAllPosts() {
       toggleModifyPostComponent();
     };
   
-    // updates post after user makes modifications
+    // updates post component after user makes modifications
     const updatePost = (event) => {
       event.preventDefault();
       const updatedPost = allPosts.map(eachPost => {
@@ -90,7 +91,22 @@ function DisplayAllPosts() {
                 />    
             </>
         );
-    }  
+    } 
+    // if modifying post, return post info by id
+    else if (isModifyPost) {
+      const post = allPosts.find(post => {
+        return post.id === editPostId;
+      });
+      return (
+        <ModifyPost
+          title={post.title}
+          content={post.content}
+          updatePost={updatePost}
+          savePostTitle={savePostTitle}
+          savePostContent={savePostContent}
+        />
+      );
+    } 
     return (
         <>
         <NavBar />

@@ -19,6 +19,36 @@ function NavBar() {
 						WV
 					</button>
 				</Link>
+				<Link to='/signin'>
+					<button
+						className='SignIn'
+						width='348px'
+						size='1.5rem'
+						margin='0'
+						height='56px'>
+						Sign In
+					</button>
+				</Link>
+				<Link to='/signup'>
+					<button
+						className='SignUp'
+						width='348px'
+						size='1.5rem'
+						margin='0'
+						height='56px'>
+						Sign Up
+					</button>
+				</Link>
+                <Link to='/blog'>
+					<button
+						className='log'
+						width='348px'
+						size='1.5rem'
+						margin='0'
+						height='56px'>
+						Blog
+					</button>
+				</Link>
                 <Link to='/about'>
 					<button
 						className='primary'
@@ -27,26 +57,6 @@ function NavBar() {
 						margin='0'
 						height='56px'>
 						About
-					</button>
-				</Link>
-                <Link to='/post'>
-					<button
-						className='secondary'
-						width='348px'
-						size='1.5rem'
-						margin='0'
-						height='56px'>
-						Post
-					</button>
-				</Link>
-                <Link to='/log'>
-					<button
-						className='log'
-						width='348px'
-						size='1.5rem'
-						margin='0'
-						height='56px'>
-						Entries
 					</button>
 				</Link>
 

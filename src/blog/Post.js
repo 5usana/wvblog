@@ -1,16 +1,16 @@
 import React from 'react';
 
-// props passed down to display published postings
-function Post(props) {
+// props destructured to pass down data  -display published postings
+function Post({ title, content, editPost, id }) {
     return (
         <>
-        <section>
-        {/* props passed to display title and content once post is published  */}
-        <h3>{props.title}</h3>
-        <p> {props.content}</p>
-        <button> Modify </button>
-        <button> Delete </button>
-        </section>
+            <section>
+            {/* props passed to display title and content once post is published  */}
+                <h3>{title}</h3>
+                <p> {content}</p>
+                <button onClick={() => editPost(id)}> Modify </button>
+                <button> Delete </button>
+            </section>
         </>
         )
     }

@@ -27,7 +27,7 @@ function CreatePost(props) {
         {/* savePostContent funciton passed through props from DisplayAllPosts */}
         <textarea
           onChange={props.savePostContent}
-          placeholder='contents'
+          placeholder='word vomit'
           rows="8"
           cols="41"
         required

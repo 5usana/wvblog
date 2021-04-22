@@ -82,12 +82,12 @@ function DisplayAllPosts() {
         return (
             <> 
                 <CreatePost 
-                // functions passed through props
-                savePostTitle = {savePostTitle}
-                savePostContent = {savePostContent}
-                getTitle= {getTitle}
-                getContent= {getContent}
-                savePost= {savePost}
+                  // functions passed through props
+                  savePostTitle = {savePostTitle}
+                  savePostContent = {savePostContent}
+                  getTitle= {getTitle}
+                  getContent= {getContent}
+                  savePost= {savePost}
                 />    
             </>
         );
@@ -121,15 +121,15 @@ function DisplayAllPosts() {
         allPosts.map(eachPost => {
           return (
             <Post
-            id={eachPost.id}
-            key={eachPost.id}
-            title={eachPost.title}
-            content={eachPost.content}
+              id={eachPost.id}
+              key={eachPost.id}
+              title={eachPost.title}
+              content={eachPost.content}
+              editPost={editPost}
             />
-            );
-          })
-          )}
-
+          );
+        })
+      )}
       <br />
       <br />
 

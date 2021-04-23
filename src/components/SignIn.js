@@ -3,31 +3,13 @@ import { Link } from 'react-router-dom';
 
 
 function SignIn() {
-	// add functionality
-	// const [customerSignIn, setCustomerSignIn] = useState({
-	// 	email: '',
-	// 	password: '',
-	// });
 
-	// const handleChange = (event) => {
-	// 	setCustomerSignIn({
-	// 		...customerSignIn,
-	// 		[event.target.name]: event.target.value,
-	// 	});
-	// };
 	
 
 	return (
 		<>
 			<Link to='/'>
-					<button
-						className='Home'
-						width='348px'
-						size='1.5rem'
-						margin='0'
-						height='56px'>
-						WV
-					</button>
+				WV
 			</Link>
 			<container>
 				<form>
@@ -56,7 +38,7 @@ function SignIn() {
 							// onChange={handleChange}
 						/>
 					</div>
-
+					<br />
 					<button type='submit' className='btn'>
 						Log In
 					</button>

@@ -1,32 +1,58 @@
 import React from 'react';
-
+import styled from 'styled-components';
 import NavBar from './NavBar';
+import Footer from './Footer';
 
+const MainDiv = styled.div`
+    padding: 60px 0 0 60px;
+	width: 50vw;
+	display: inline-block;
+    border-radius: 20px;
+    text-align: center;
+    background-color: white;
+    opacity: .8 ;
+`;
+
+// const Section = styled.section`
+//     display: flex;
+//     flex-flow: row wrap;
+//     padding: 0 0 0 80px;
+//     background-color: red;
+// `;
+
+const HeaderOne = styled.h1`
+	font-size: 3rem;
+	display: left inline;
+    text-align: left;
+    margin: 0;
+`;
+const HeaderTwo = styled.h2`
+	font-size: 2rem;
+	display: left inline;
+    text-align: left;
+`;
 
 
 function LandingPage() {
     return (
-        <div className="landingPage">
 
-           <NavBar />
-            <h1>Hey spit it out.</h1>
-            <h2>Don't think, let it flow.</h2>
+        <div>
+            <NavBar />
+            <MainDiv>
+                <section>
+                    <HeaderOne>Hey spit it out. </HeaderOne>
+                    <br />
+                    <HeaderTwo> Don't think, let it flow.</HeaderTwo>
+
+                </section>
+            </MainDiv>
+            <Footer />
+
 
         </div>
+        
     );
 }
 
-// function Footer() {
-// 	let currentyear = new Date().getFullYear();
-// 	return (
-// 		<footer>
-// 			<hr />
-// 			<p className='footer-text'>{currentyear} Copyright ⓒ </p>
-// 			<Link className='footer-text' to='/about'>
-// 				5usana
-// 			</Link>
-// 		</footer>
-// 	);
-// }
 
 export default LandingPage;

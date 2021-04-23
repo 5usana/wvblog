@@ -1,24 +1,38 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
+const HomeNav = styled.nav`
+	margin: 0 auto;
+	padding: 16px 24px;
+	height: 72px;
+	font-size: 3rem;
+`;
+
+const NavContainer = styled.section`
+	display: flex;
+	flex-direction: row;
+	order: 1;
+	background-color: #CCE4E5;
+	flex-flow: row;	
+`;
+
+const HeaderOne = styled.h1`
+	background-color: coral;
+	font-weight: 100;
+	text-decoration: none;
+	// .nav-tag {
+	// 	color: red;
+	// 	font-weight: 100;
+	// 	text-decoration: none;
+	// }
+`;
 
 function NavBar() {
-  
-
 
     return (
-        <nav className='navBar'>
-            <ul>
-                <Link to='/'>
-					<button
-						className='Home'
-						width='348px'
-						size='1.5rem'
-						margin='0'
-						height='56px'>
-						WV
-					</button>
-				</Link>
+		<NavContainer>
+			<HomeNav>
 				<Link to='/signin'>
 					<button
 						className='SignIn'
@@ -39,7 +53,7 @@ function NavBar() {
 						Sign Up
 					</button>
 				</Link>
-                <Link to='/blog'>
+				<Link to='/blog'>
 					<button
 						className='log'
 						width='348px'
@@ -49,7 +63,7 @@ function NavBar() {
 						Blog
 					</button>
 				</Link>
-                <Link to='/about'>
+				<Link to='/about'>
 					<button
 						className='primary'
 						width='348px'
@@ -59,12 +73,14 @@ function NavBar() {
 						About
 					</button>
 				</Link>
+			</HomeNav>
+			
+				<Link to='/'>
+					<HeaderOne className='nav-tag'> WV </HeaderOne>
+				</Link>
 
-            </ul>
-
-            
-            
-        </nav>
+			
+		</NavContainer>
     );
 }
 

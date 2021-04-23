@@ -1,22 +1,51 @@
 import React from 'react';
 import susana from '../images/avatar-susana.png';
 import NavBar from './NavBar';
+import styled from 'styled-components';
+
+const HeaderOne = styled.h1`
+	font-size: 3rem;
+	text-align: center;
+`;
+
+const Section = styled.section`
+	display: flex;
+	flex-flow: row wrap;
+`;
+
+const MyAvatar = styled.figure`
+	width: 280px;
+	margin: 0 auto;
+	margin-bottom: 24px;
+	text-align: center;
+
+	&.mobile {
+		width: 180px;
+	}
+`;
+
+const MyName = styled.a`
+	padding-top: 8px;
+	margin: 0 auto;
+	font-size: 2rem;
+	color: #222f65;
+`;
 
 function About() {
     return (
         <>
 			<NavBar />
-          	<h1>Meet Susana</h1>
-			<section>
-				<figure>
+          	<HeaderOne>Meet Susana</HeaderOne>
+			<Section>
+				<MyAvatar>
 					<a href='https://www.linkedin.com/in/susanacmartins/' target='blank'>
 					<img src={susana} alt='susana avatar' />	
 					</a>
-					<a href='https://github.com/5usana' target='blank'>
+					<MyName href='https://github.com/5usana' target='blank'>
 						Susana Martins
-					</a>
-				</figure>  
-        </section>
+					</MyName>
+				</MyAvatar>  
+        </Section>
         </>
     );
 }

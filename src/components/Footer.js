@@ -6,19 +6,17 @@ const FooterStyle = styled.footer`
 	position: fixed;
 	display: block;
 	bottom: 0;
-	background-color: #f2f2f2;
-	color: #222f65;
-	height: 70px;
+	// color: #000000;
+	height: 80px;
 	width: 100vw;
 	text-align: center;
-	padding-top: 45px;
 
 	.footer-text {
 		display: inline-block;
-		color: #222f65;
-		font-weight: 700;
+		color: #000000;
+		font-weight: 550;
 		text-decoration: none;
-		padding: 0 4px;
+		padding: 0 3.5px;
 	}
 `;
 

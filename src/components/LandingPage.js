@@ -4,10 +4,21 @@ import NavBar from './NavBar';
 import Footer from './Footer';
 
 const HeroDiv = styled.div`
-	padding: 160px 0 0 260px;
+	
+    padding: 60px 0 0 60px;
 	width: 50vw;
 	display: inline-block;
+   
+    text-align: center;
+    background-color: white;
+    opacity: .8 ;
+    
 `;
+
+const Section = styled.section`
+    background-color: #CCE4E5;
+    padding: 0 0 0 80px;
+`
 
 const HeaderOne = styled.h1`
 	font-size: 3rem;
@@ -21,7 +32,7 @@ const HeaderTwo = styled.h2`
 function LandingPage() {
     return (
 
-        <section>
+        <Section>
             <NavBar />
             <HeroDiv>
                 <HeaderOne>Hey spit it out. </HeaderOne>
@@ -29,7 +40,7 @@ function LandingPage() {
                 <HeaderTwo> Don't think, let it flow.</HeaderTwo>
             </HeroDiv>
             <Footer />
-        </section>
+        </Section>
     );
 }
 

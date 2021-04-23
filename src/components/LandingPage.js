@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-
 import NavBar from './NavBar';
+import Footer from './Footer';
 
 const HeroDiv = styled.div`
 	padding: 160px 0 0 260px;
@@ -22,28 +22,16 @@ function LandingPage() {
     return (
 
         <section>
-        <NavBar />
-        <HeroDiv>
-            <HeaderOne>Hey spit it out. </HeaderOne>
-            <br />
-            <HeaderTwo> Don't think, let it flow.</HeaderTwo>
-        </HeroDiv>
-
+            <NavBar />
+            <HeroDiv>
+                <HeaderOne>Hey spit it out. </HeaderOne>
+                <br />
+                <HeaderTwo> Don't think, let it flow.</HeaderTwo>
+            </HeroDiv>
+            <Footer />
         </section>
     );
 }
 
-// function Footer() {
-// 	let currentyear = new Date().getFullYear();
-// 	return (
-// 		<footer>
-// 			<hr />
-// 			<p className='footer-text'>{currentyear} Copyright ⓒ </p>
-// 			<Link className='footer-text' to='/about'>
-// 				5usana
-// 			</Link>
-// 		</footer>
-// 	);
-// }
 
 export default LandingPage;

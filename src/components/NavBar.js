@@ -3,24 +3,25 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const HomeNav = styled.nav`
-	margin: 0 auto;
-	padding: 16px 24px;
-	height: 72px;
-	font-size: 3rem;
+margin: 0 auto;
+padding: 16px 24px;
+height: 200px;
+font-size: 3rem;
 `;
 
 const NavContainer = styled.section`
-	display: flex;
-	flex-direction: row;
-	order: 1;
-	background-color: #CCE4E5;
-	flex-flow: row;	
+display: flex;
+flex-direction: row;
+order: 1;
+background-color: #CCE4E5;
+flex-flow: row;	
 `;
 
 const HeaderOne = styled.h1`
 	background-color: coral;
 	font-weight: 100;
 	text-decoration: none;
+	font-size: 50px;
 	// .nav-tag {
 	// 	color: red;
 	// 	font-weight: 100;
@@ -32,6 +33,9 @@ function NavBar() {
 
     return (
 		<NavContainer>
+			<Link to='/'>
+				<HeaderOne className='nav-tag'> WV </HeaderOne>
+			</Link>
 			<HomeNav>
 				<Link to='/signin'>
 					<button
@@ -75,9 +79,6 @@ function NavBar() {
 				</Link>
 			</HomeNav>
 			
-				<Link to='/'>
-					<HeaderOne className='nav-tag'> WV </HeaderOne>
-				</Link>
 
 			
 		</NavContainer>

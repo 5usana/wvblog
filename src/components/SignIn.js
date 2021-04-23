@@ -1,6 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
+
+const SignInContainer = styled.div`
+	margin: 0 auto;
+	text-align: center;
+`;
+
+const HeaderOne = styled.h1`
+	font-size: 2.5rem;
+`;
+
+const HeaderSix = styled.h6`
+	font-size: 1rem;
+	color: #F06123;
+`;
 
 function SignIn() {
 
@@ -11,10 +26,10 @@ function SignIn() {
 			<Link to='/'>
 				WV
 			</Link>
-			<container>
+			<SignInContainer>
 				<form>
-					<h1>Welcome Back!</h1>
-
+					<HeaderOne>Welcome Back!</HeaderOne>
+					<HeaderSix> Coming soon! </HeaderSix>
 					<div className='form-group'>
 						<label>Email</label>
 						<input
@@ -51,7 +66,7 @@ function SignIn() {
 						
 					</div>
 				</form>
-			</container>
+			</SignInContainer>
 		</>
 	);
 }

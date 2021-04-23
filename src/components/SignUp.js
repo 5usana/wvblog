@@ -7,14 +7,7 @@ function SignUp() {
 	return (
 		<>
             <Link to='/'>
-					<button
-						className='Home'
-						width='348px'
-						size='1.5rem'
-						margin='0'
-						height='56px'>
-						WV
-					</button>
+				WV
 			</Link>
 			<container>
 				<form>
@@ -65,7 +58,7 @@ function SignUp() {
 							// onChange={handleChange}
 						/>
 					</div>
-
+					<br />
 					<button type='submit' className='btn'>
 						Log In
 					</button>

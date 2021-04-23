@@ -28,7 +28,7 @@ function SignIn() {
 			</Link>
 			<SignInContainer>
 				<form>
-					<HeaderOne>Welcome Back!</HeaderOne>
+					<HeaderOne>Welcome Back</HeaderOne>
 					<HeaderSix> Coming soon! </HeaderSix>
 					<div className='form-group'>
 						<label>Email</label>
@@ -61,8 +61,9 @@ function SignIn() {
 					<div className='new-member'>
 						<br />
                         <br />
-                        Join us! 
-                        {/* <Link to='/signup'>Sign Up</Link> */}
+                        Join us
+						<br></br> 
+                        <Link to='/signup'>Sign Up</Link>
 						
 					</div>
 				</form>

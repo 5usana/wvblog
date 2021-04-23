@@ -3,6 +3,18 @@ import CreatePost from './CreatePost';
 import Post from './Post';
 import NavBar from '../components/NavBar';
 import ModifyPost from './ModifyPost';
+import styled from 'styled-components';
+
+const HeaderTwo = styled.h2`
+  margin: 0 auto;
+	text-align: center;
+`;
+
+const FlowDiv = styled.h2`
+  margin: 0 auto;
+	text-align: center;
+`;
+
 
 //Parent component to Post, CreatePost & ModifyPost
 
@@ -118,12 +130,12 @@ function DisplayAllPosts() {
     return (
         <>
         <NavBar />
-        <h2> Postings </h2>
+        <HeaderTwo> Postings </HeaderTwo>
         {/* if allPosts is empty, lrt it flow will display */}
         {!allPosts.length ? (
-          <div>
-          <h3>let it flow... </h3>
-        </div>
+          <FlowDiv>
+            <h3>let it flow... </h3>
+          </FlowDiv>
       ) : (
         // if allPosts contains entries .map() will display entries
         allPosts.map(eachPost => {

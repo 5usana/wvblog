@@ -2,12 +2,19 @@ import React from 'react';
 import NavBar from '../components/NavBar';
 import styled from 'styled-components';
 
+
+
+
+
+
 const BlogDiv = styled.div`
 	  width: 45vw;
 	  display: inline-block;
     border-radius: 20px;
     background-color: Blue;
     opacity: .8 ;
+    margin: 0 auto;
+    text-align: center;
 
 `;
 

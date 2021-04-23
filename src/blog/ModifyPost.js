@@ -1,9 +1,18 @@
 import React from 'react';
+import styled from 'styled-components';
+
+
+const ModifyForm = styled.form`
+    margin: 0 auto;
+    text-align: center;
+`;
+
+
 
 function ModifyPost(props) {
     return (
         <>
-            <form>
+            <ModifyForm>
                 <h1>Modify Post</h1>
                 <input
                     defaultValue={props.title}
@@ -24,7 +33,7 @@ function ModifyPost(props) {
                 <br />
                 <br />
                 <button onClick ={props.updatePost}>Update Post</button>
-            </form>
+            </ModifyForm>
         </>
     );
 }

@@ -14,8 +14,11 @@ const MainDiv = styled.div`
 `;
 
 const Section = styled.section`
-    background-color: #CCE4E5;
+    display: flex;
+    flex-flow: row wrap;
+    
     padding: 0 0 0 80px;
+    background-color: red;
 `
 
 const HeaderOne = styled.h1`
@@ -29,6 +32,7 @@ const HeaderTwo = styled.h2`
 	display: left inline;
     text-align: left;
 `;
+
 
 function LandingPage() {
     return (

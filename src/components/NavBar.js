@@ -9,6 +9,15 @@ const HomeNav = styled.nav`
 	font-size: 3rem;
 `;
 
+const NavContainer = styled.section`
+	display: flex;
+	flex-direction: row;
+	order: 1;
+	background-color: #CCE4E5;
+	flex-flow: row;
+		
+	
+`;
 // const LinkWv = styled.link`
 // 	color: red;
 // `;
@@ -16,7 +25,7 @@ const HomeNav = styled.nav`
 function NavBar() {
 
     return (
-		<div>
+		<NavContainer>
 			<HomeNav>
 				<Link to='/signin'>
 					<button
@@ -62,7 +71,7 @@ function NavBar() {
 			<Link to='/'>
 				WV
 			</Link>
-		</div>
+		</NavContainer>
     );
 }
 

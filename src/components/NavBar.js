@@ -14,13 +14,19 @@ const NavContainer = styled.section`
 	flex-direction: row;
 	order: 1;
 	background-color: #CCE4E5;
-	flex-flow: row;
-		
-	
+	flex-flow: row;	
 `;
-// const LinkWv = styled.link`
-// 	color: red;
-// `;
+
+const HeaderOne = styled.h1`
+	background-color: coral;
+	font-weight: 100;
+	text-decoration: none;
+	// .nav-tag {
+	// 	color: red;
+	// 	font-weight: 100;
+	// 	text-decoration: none;
+	// }
+`;
 
 function NavBar() {
 
@@ -68,9 +74,12 @@ function NavBar() {
 					</button>
 				</Link>
 			</HomeNav>
-			<Link to='/'>
-				WV
-			</Link>
+			
+				<Link to='/'>
+					<HeaderOne className='nav-tag'> WV </HeaderOne>
+				</Link>
+
+			
 		</NavContainer>
     );
 }

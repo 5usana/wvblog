@@ -13,13 +13,12 @@ const MainDiv = styled.div`
     opacity: .8 ;
 `;
 
-const Section = styled.section`
-    display: flex;
-    flex-flow: row wrap;
-    
-    padding: 0 0 0 80px;
-    background-color: red;
-`
+// const Section = styled.section`
+//     display: flex;
+//     flex-flow: row wrap;
+//     padding: 0 0 0 80px;
+//     background-color: red;
+// `;
 
 const HeaderOne = styled.h1`
 	font-size: 3rem;
@@ -37,7 +36,7 @@ const HeaderTwo = styled.h2`
 function LandingPage() {
     return (
 
-        <Section>
+        <div>
             <NavBar />
             <MainDiv>
                 <section>
@@ -48,7 +47,10 @@ function LandingPage() {
                 </section>
             </MainDiv>
             <Footer />
-        </Section>
+
+
+        </div>
+        
     );
 }
 

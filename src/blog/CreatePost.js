@@ -6,9 +6,9 @@ const BlogDiv = styled.div`
 	  width: 45vw;
 	  display: inline-block;
     border-radius: 20px;
-    text-align: center;
     background-color: Blue;
     opacity: .8 ;
+
 `;
 
 // props -data as functions or state passed from parent to child component
@@ -27,7 +27,7 @@ function CreatePost(props) {
             type='text'
             onChange={props.savePostTitle}
             placeholder='title'
-            size="39"
+            // size="39"
             required
             // pass down useRef from DisplayAllPosts through props
             ref={props.getTitle}
@@ -40,7 +40,7 @@ function CreatePost(props) {
             onChange={props.savePostContent}
             placeholder='word vomit'
             rows="8"
-            cols="41"
+            // cols="41"
           required
           // pass down useRef from DisplayAllPosts through props
           ref={props.getContent}

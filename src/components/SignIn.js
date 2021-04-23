@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+// import axios from 'axios';
 
 
 const SignInContainer = styled.div`
@@ -18,7 +19,35 @@ const HeaderSix = styled.h6`
 `;
 
 function SignIn() {
+	// const history = useHistory();
 
+	// const [userSignIn, setUserSignIn] = useState({
+	// 	email: '',
+	// 	password: '',
+	// });
+
+	// const handleChange = (event) => {
+	// 	setUserSignIn({
+	// 		...userSignIn,
+	// 		[event.target.name]: event.target.value,
+	// 	});
+	// };
+	// const handleSubmit = (event) => {
+	// 	event.preventDefault();
+	// 	console.log(event);
+
+	// 	axios
+	// 		.post(`${APIurl}/users/login`, userSignIn, {
+	// 			headers: { Accept: 'application/json' },
+	// 		})
+	// 		.then(function (response) {
+	// 			console.log(response);
+	// 		})
+	// 		.then(() => history.push('/'))
+	// 		.catch(function (error) {
+	// 			console.log(error);
+	// 		});
+	// };
 	
 
 	return (
@@ -62,7 +91,7 @@ function SignIn() {
 						<br />
                         <br />
                         Join us
-						<br></br> 
+						<br></br>
                         <Link to='/signup'>Sign Up</Link>
 						
 					</div>

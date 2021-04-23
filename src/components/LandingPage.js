@@ -3,16 +3,14 @@ import styled from 'styled-components';
 import NavBar from './NavBar';
 import Footer from './Footer';
 
-const HeroDiv = styled.div`
-	
+const MainDiv = styled.div`
     padding: 60px 0 0 60px;
 	width: 50vw;
 	display: inline-block;
-   
+    border-radius: 20px;
     text-align: center;
     background-color: white;
     opacity: .8 ;
-    
 `;
 
 const Section = styled.section`
@@ -22,11 +20,14 @@ const Section = styled.section`
 
 const HeaderOne = styled.h1`
 	font-size: 3rem;
-	display: inline;
+	display: left inline;
+    text-align: left;
+    margin: 0;
 `;
 const HeaderTwo = styled.h2`
 	font-size: 2rem;
-	display: inline;
+	display: left inline;
+    text-align: left;
 `;
 
 function LandingPage() {
@@ -34,11 +35,14 @@ function LandingPage() {
 
         <Section>
             <NavBar />
-            <HeroDiv>
-                <HeaderOne>Hey spit it out. </HeaderOne>
-                <br />
-                <HeaderTwo> Don't think, let it flow.</HeaderTwo>
-            </HeroDiv>
+            <MainDiv>
+                <section>
+                    <HeaderOne>Hey spit it out. </HeaderOne>
+                    <br />
+                    <HeaderTwo> Don't think, let it flow.</HeaderTwo>
+
+                </section>
+            </MainDiv>
             <Footer />
         </Section>
     );

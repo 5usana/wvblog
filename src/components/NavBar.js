@@ -34,6 +34,27 @@ const HeaderOne = styled.h1`
 	// }
 `;
 
+const SignInButton = styled.button`
+	display:inline-block;
+ 	padding:0.35em 1em;
+ 	border:0.29em solid #FFFFFF;
+ 	margin:0 0.6em 0.3em 0;
+ 	order-radius:0.12em;
+//  	box-sizing: border-box;
+//  	font-weight:400;
+//  	color:#000000;
+ 	transition: all 0.2s;
+`;
+
+const SignUpButton = styled.button`
+	display:inline-block;
+ 	padding:0.35em 1em;
+ 	border:0.29em solid #FFFFFF;
+ 	margin:0 0.6em 0.3em 0;
+ 	order-radius:0.12em;
+ 	transition: all 0.2s;
+`;
+
 function NavBar() {
 
     return (
@@ -43,28 +64,28 @@ function NavBar() {
 			</Link>
 			<HomeNav>
 				<Link to='/signin'>
-					<button
+					<SignInButton
 						className='SignIn'
 						width='348px'
 						size='1.5rem'
 						margin='0'
 						height='56px'>
 						Sign In
-					</button>
+					</SignInButton>
 				</Link>
 				<Link to='/signup'>
-					<button
+					<SignUpButton
 						className='SignUp'
 						width='348px'
 						size='1.5rem'
 						margin='0'
 						height='56px'>
 						Sign Up
-					</button>
+					</SignUpButton>
 				</Link>
 				<Link to='/blog'>
 					<button
-						className='log'
+						className='blog'
 						width='348px'
 						size='1.5rem'
 						margin='0'
@@ -74,7 +95,7 @@ function NavBar() {
 				</Link>
 				<Link to='/about'>
 					<button
-						className='primary'
+						className='about'
 						width='348px'
 						size='1.5rem'
 						margin='0'

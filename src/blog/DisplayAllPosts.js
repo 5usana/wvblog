@@ -14,7 +14,18 @@ const HeaderTwo = styled.h2`
 const FlowDiv = styled.h2`
   padding: 30px 0 0 30px;
   margin: 0 auto;
-  font-size: 1.5rem;
+  font-size: 3.5rem;
+`;
+const CreateButton = styled.button`
+    display: inline-block;
+    color: black;
+    font-size: 1em;
+    margin: 1em;
+    padding: 0.25em 1em;
+    border: 2px solid black;
+    border-radius: 3px;
+    display:inline-block;
+    margin-left: 30px;
 `;
 
 
@@ -156,7 +167,7 @@ function DisplayAllPosts() {
       <br />
       <br />
 
-      <button onClick={toggleCreateNewPost}>Create New</button>
+      <CreateButton onClick={toggleCreateNewPost}>Create New</CreateButton>
     </>
   );
 };

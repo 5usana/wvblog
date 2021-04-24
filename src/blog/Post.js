@@ -3,7 +3,11 @@ import styled from 'styled-components';
 
 const PostSection = styled.section`
     margin: 0 auto;
-    text-align: center;
+    // text-align: center;
+    margin: 0 auto;
+    font-size: 1rem;
+    display: inline-block;
+    margin-left: 30px;
 `;
 const ModifyButton = styled.button`
     display: inline-block;

@@ -18,9 +18,10 @@ const NavContainer = styled.section`
 `;
 
 const HeaderOne = styled.h1`
+	padding: 70px 0 0 0;
 	font-weight: 100;
-	font-size: 50px;
-	margin-left: 20px;
+	font-size: 61px;
+	margin-left: 10px;
 	color: black;
 	text-decoration: none;
 `;
@@ -56,7 +57,6 @@ const AboutButton = styled.button`
 	display:inline-block;
 	padding:0.35em .4em;
  	border:0.29em solid #FFFFFF;
-//  	margin:0 0.6em 0em 0;
  	order-radius:0.12em;
  	transition: all 0.2s;
 `;

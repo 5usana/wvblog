@@ -15,13 +15,18 @@ flex-direction: row;
 order: 1;
 background-color: #CCE4E5;
 flex-flow: row;	
+
 `;
 
 const HeaderOne = styled.h1`
-	background-color: coral;
+	// background-color: coral;
 	font-weight: 100;
-	text-decoration: none;
 	font-size: 50px;
+	margin-left: 20px;
+	color: black;
+	text-decoration: none;
+
+    
 	// .nav-tag {
 	// 	color: red;
 	// 	font-weight: 100;
@@ -33,8 +38,8 @@ function NavBar() {
 
     return (
 		<NavContainer>
-			<Link to='/'>
-				<HeaderOne className='nav-tag'> WV </HeaderOne>
+			<Link style={{ textDecoration: 'none' }} to='/'>
+				<HeaderOne className='nav-tag' > WV </HeaderOne>
 			</Link>
 			<HomeNav>
 				<Link to='/signin'>

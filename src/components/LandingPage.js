@@ -11,6 +11,7 @@ const MainDiv = styled.div`
     text-align: center;
     background-color: white;
     opacity: .8 ;
+    margin-left: 150px;
 `;
 
 // const Section = styled.section`

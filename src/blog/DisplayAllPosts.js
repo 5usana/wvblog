@@ -6,13 +6,15 @@ import ModifyPost from './ModifyPost';
 import styled from 'styled-components';
 
 const HeaderTwo = styled.h2`
+  padding: 30px 0 0 30px;
   margin: 0 auto;
-	text-align: center;
+  font-size: 2rem;
 `;
 
 const FlowDiv = styled.h2`
+  padding: 30px 0 0 30px;
   margin: 0 auto;
-	text-align: center;
+  font-size: 1.5rem;
 `;
 
 

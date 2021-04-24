@@ -9,6 +9,7 @@ const ModifyForm = styled.form`
 
 
 
+
 function ModifyPost(props) {
     return (
         <>
@@ -19,7 +20,7 @@ function ModifyPost(props) {
                     onChange={props.savePostTitle}
                     text
                     placeholder="title"
-                    size="39"
+                    size="48"
                 ></input>
                 <br />
                 <br />

@@ -5,7 +5,26 @@ const PostSection = styled.section`
     margin: 0 auto;
     text-align: center;
 `;
-
+const ModifyButton = styled.button`
+    display: inline-block;
+    color: black;
+    font-size: 1em;
+    margin: 1em;
+    padding: 0.25em 1em;
+    border: 2px solid black;
+    border-radius: 3px;
+    display:inline-block;
+`;
+const DeleteButton = styled.button`
+    display: inline-block;
+    color: black;
+    font-size: 1em;
+    margin: 1em;
+    padding: 0.25em 1em;
+    border: 2px solid black;
+    border-radius: 3px;
+    display:inline-block;
+`;
 
 // props destructured to pass down data  -display published postings
 function Post({ title, content, editPost, id, deletePost }) {
@@ -15,8 +34,8 @@ function Post({ title, content, editPost, id, deletePost }) {
             {/* props passed to display title and content once post is published  */}
                 <h3>{title}</h3>
                 <p> {content}</p>
-                <button onClick={() => editPost(id)}> Modify </button>
-                <button onClick={() => deletePost(id)}> Delete </button>
+                <ModifyButton onClick={() => editPost(id)}> Modify </ModifyButton>
+                <DeleteButton onClick={() => deletePost(id)}> Delete </DeleteButton>
             </PostSection>
         </>
         )

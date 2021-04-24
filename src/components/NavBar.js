@@ -55,6 +55,24 @@ const SignUpButton = styled.button`
  	transition: all 0.2s;
 `;
 
+const BlogButton = styled.button`
+	display:inline-block;
+ 	padding:0.35em 1em;
+ 	border:0.29em solid #FFFFFF;
+ 	margin:0 0.6em 0.3em 0;
+ 	order-radius:0.12em;
+ 	transition: all 0.2s;
+`;
+
+const AboutButton = styled.button`
+	display:inline-block;
+ 	padding:0.35em 1em;
+ 	border:0.29em solid #FFFFFF;
+ 	margin:0 0.6em 0.3em 0;
+ 	order-radius:0.12em;
+ 	transition: all 0.2s;
+`;
+
 function NavBar() {
 
     return (
@@ -84,24 +102,24 @@ function NavBar() {
 					</SignUpButton>
 				</Link>
 				<Link to='/blog'>
-					<button
+					<BlogButton
 						className='blog'
 						width='348px'
 						size='1.5rem'
 						margin='0'
 						height='56px'>
 						Blog
-					</button>
+					</BlogButton>
 				</Link>
 				<Link to='/about'>
-					<button
+					<AboutButton
 						className='about'
 						width='348px'
 						size='1.5rem'
 						margin='0'
 						height='56px'>
 						About
-					</button>
+					</AboutButton>
 				</Link>
 			</HomeNav>
 			

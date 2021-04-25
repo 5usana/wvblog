@@ -164,9 +164,6 @@ function DisplayAllPosts() {
           );
         })
       )}
-      <br />
-      <br />
-
       <CreateButton onClick={toggleCreateNewPost}>Create New</CreateButton>
     </>
   );

@@ -15,13 +15,13 @@ const MainDiv = styled.div`
 `;
 
 const HeaderOne = styled.h1`
-	font-size: 3.6rem;
+	font-size: 3.4rem;
 	display: left inline;
     text-align: left;
     margin: 0;
 `;
 const HeaderTwo = styled.h2`
-	font-size: 2.2rem;
+	font-size: 2rem;
 	display: left inline;
     text-align: left;
 `;

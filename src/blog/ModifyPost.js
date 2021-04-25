@@ -20,7 +20,7 @@ function ModifyPost(props) {
                     onChange={props.savePostTitle}
                     text
                     placeholder="title"
-                    size="48"
+                    size="41"
                 ></input>
                 <br />
                 <br />

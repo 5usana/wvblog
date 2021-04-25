@@ -18,14 +18,17 @@ const FlowDiv = styled.h2`
 `;
 const CreateButton = styled.button`
     display: inline-block;
-    color: black;
+    // color: black;
     font-size: 1em;
     margin: 1em;
     padding: 0.25em 1em;
-    border: 2px solid black;
+    // border: 2px solid black;
     border-radius: 3px;
     display:inline-block;
     margin-left: 30px;
+    color: #F06123;
+    background-color: white;
+    border: 2px solid #F06123;
 `;
 
 

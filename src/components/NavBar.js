@@ -7,6 +7,7 @@ const HomeNav = styled.nav`
 	padding: 16px 24px;
 	height: 200px;
 	font-size: 3rem;
+
 `;
 
 const NavContainer = styled.section`

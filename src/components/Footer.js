@@ -7,16 +7,16 @@ const FooterStyle = styled.footer`
 	display: block;
 	bottom: 0;
 	// color: #000000;
-	height: 80px;
+	height: 70px;
 	width: 100vw;
 	text-align: center;
 
 	.footer-text {
 		display: inline-block;
 		color: #000000;
-		font-weight: 550;
+		font-weight: 500;
 		text-decoration: none;
-		padding: 0 3.5px;
+		padding: 0 0 8px 0;
 	}
 `;
 

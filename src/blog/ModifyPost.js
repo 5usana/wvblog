@@ -7,7 +7,17 @@ const ModifyForm = styled.form`
     text-align: center;
 `;
 
-
+const UpdateButton = styled.button`
+    display: inline-block;
+    font-size: 1em;
+    margin: 1em;
+    padding: 0.25em 1em;
+    border-radius: 3px;
+    display:inline-block;
+    color: #F06123;
+    background-color: white;
+    border: 2px solid #F06123;
+`;
 
 
 function ModifyPost(props) {
@@ -33,7 +43,7 @@ function ModifyPost(props) {
                 ></textarea>
                 <br />
                 <br />
-                <button onClick ={props.updatePost}>Update Post</button>
+                <UpdateButton onClick ={props.updatePost}>Update</UpdateButton>
             </ModifyForm>
         </>
     );

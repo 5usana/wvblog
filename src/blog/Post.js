@@ -11,23 +11,25 @@ const PostSection = styled.section`
 `;
 const ModifyButton = styled.button`
     display: inline-block;
-    color: black;
     font-size: 1em;
     margin: 1em;
     padding: 0.25em 1em;
-    border: 2px solid black;
     border-radius: 3px;
     display:inline-block;
+    color: #F06123;
+    background-color: white;
+    border: 2px solid #F06123;
 `;
 const DeleteButton = styled.button`
     display: inline-block;
-    color: black;
     font-size: 1em;
     margin: 1em;
     padding: 0.25em 1em;
-    border: 2px solid black;
     border-radius: 3px;
     display:inline-block;
+    color: #F06123;
+    background-color: white;
+    border: 2px solid #F06123;
 `;
 
 // props destructured to pass down data  -display published postings

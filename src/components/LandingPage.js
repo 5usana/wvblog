@@ -4,15 +4,16 @@ import NavBar from './NavBar';
 import Footer from './Footer';
 
 const MainDiv = styled.div`
-    padding: 30px 0 0 10px;
-	width: 45vw;
-	display: inline-block;
     border-radius: 20px;
-    text-align: center;
-    background-color: white;
-    opacity: .8 ;
-    margin-left: 150px;
     border: 5px solid black;
+    width: 350px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	text-align: center;
+
+	&.mobile {
+		width: 180px;
+	}
 `;
 
 const HeaderOne = styled.h1`

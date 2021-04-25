@@ -3,6 +3,34 @@ import CreatePost from './CreatePost';
 import Post from './Post';
 import NavBar from '../components/NavBar';
 import ModifyPost from './ModifyPost';
+import styled from 'styled-components';
+
+const HeaderTwo = styled.h2`
+  padding: 30px 0 0 30px;
+  margin: 0 auto;
+  font-size: 2rem;
+`;
+
+const FlowDiv = styled.h2`
+  padding: 30px 0 0 30px;
+  margin: 0 auto;
+  font-size: 3.5rem;
+`;
+const CreateButton = styled.button`
+    display: inline-block;
+    // color: black;
+    font-size: 1em;
+    margin: 1em;
+    padding: 0.25em 1em;
+    // border: 2px solid black;
+    border-radius: 3px;
+    display:inline-block;
+    margin-left: 30px;
+    color: #F06123;
+    background-color: white;
+    border: 2px solid #F06123;
+`;
+
 
 //Parent component to Post, CreatePost & ModifyPost
 
@@ -118,12 +146,12 @@ function DisplayAllPosts() {
     return (
         <>
         <NavBar />
-        <h2> Postings </h2>
+        <HeaderTwo> Postings </HeaderTwo>
         {/* if allPosts is empty, lrt it flow will display */}
         {!allPosts.length ? (
-          <div>
-          <h3>let it flow... </h3>
-        </div>
+          <FlowDiv>
+            <h3>let it flow... </h3>
+          </FlowDiv>
       ) : (
         // if allPosts contains entries .map() will display entries
         allPosts.map(eachPost => {
@@ -139,10 +167,7 @@ function DisplayAllPosts() {
           );
         })
       )}
-      <br />
-      <br />
-
-      <button onClick={toggleCreateNewPost}>Create New</button>
+      <CreateButton onClick={toggleCreateNewPost}>Create New</CreateButton>
     </>
   );
 };

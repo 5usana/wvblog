@@ -4,30 +4,25 @@ import NavBar from './NavBar';
 import Footer from './Footer';
 
 const MainDiv = styled.div`
-    padding: 60px 0 0 60px;
-	width: 50vw;
+    padding: 30px 0 0 10px;
+	width: 45vw;
 	display: inline-block;
     border-radius: 20px;
     text-align: center;
     background-color: white;
     opacity: .8 ;
+    margin-left: 150px;
+    border: 5px solid black;
 `;
 
-// const Section = styled.section`
-//     display: flex;
-//     flex-flow: row wrap;
-//     padding: 0 0 0 80px;
-//     background-color: red;
-// `;
-
 const HeaderOne = styled.h1`
-	font-size: 3rem;
+	font-size: 3.3rem;
 	display: left inline;
     text-align: left;
     margin: 0;
 `;
 const HeaderTwo = styled.h2`
-	font-size: 2rem;
+	font-size: 1.8rem;
 	display: left inline;
     text-align: left;
 `;
@@ -35,20 +30,15 @@ const HeaderTwo = styled.h2`
 
 function LandingPage() {
     return (
-
         <div>
             <NavBar />
             <MainDiv>
                 <section>
                     <HeaderOne>Hey spit it out. </HeaderOne>
-                    <br />
                     <HeaderTwo> Don't think, let it flow.</HeaderTwo>
-
                 </section>
             </MainDiv>
             <Footer />
-
-
         </div>
         
     );

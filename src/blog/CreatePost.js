@@ -3,12 +3,28 @@ import NavBar from '../components/NavBar';
 import styled from 'styled-components';
 
 const BlogDiv = styled.div`
-	  width: 45vw;
-	  display: inline-block;
-    border-radius: 20px;
-    background-color: Blue;
-    opacity: .8 ;
+    display: flex;
+	  flex-flow: row wrap;
+    width: 350px;
+	  margin: 0 auto;
+	  margin-bottom: 24px;
+	  text-align: center;
 
+	  &.mobile {
+		width: 180px;
+	}
+`;
+
+const PublishButton = styled.button`
+    display: inline-block;
+    font-size: 1em;
+    margin: 1em;
+    padding: 0.25em 1em;
+    color: #F06123;
+    background-color: white;
+    border: 2px solid #F06123;
+    border-radius: 3px;
+    display:inline-block; 
 `;
 
 // props -data as functions or state passed from parent to child component
@@ -27,7 +43,7 @@ function CreatePost(props) {
             type='text'
             onChange={props.savePostTitle}
             placeholder='title'
-            // size="39"
+            size="39"
             required
             // pass down useRef from DisplayAllPosts through props
             ref={props.getTitle}
@@ -36,18 +52,18 @@ function CreatePost(props) {
           <br />
           {/*savePostContent function passes useState setContent through props  */}
           {/* savePostContent funciton passed through props from DisplayAllPosts */}
-          <textarea
+          <textArea
             onChange={props.savePostContent}
             placeholder='word vomit'
             rows="8"
-            // cols="41"
+            cols="41"
           required
           // pass down useRef from DisplayAllPosts through props
           ref={props.getContent}
-          ></textarea>
+          ></textArea>
           <br />
           <br />
-          <button> Publish </button>
+          <PublishButton> Publish </PublishButton>
         </form>
         </BlogDiv>
       </>

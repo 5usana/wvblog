@@ -1,5 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+
+
+const SignUpContainer = styled.div`
+	margin: 0 auto;
+	text-align: center;
+`;
+
+const HeaderOne = styled.h1`
+	font-size: 2.5rem;
+`;
+
+const HeaderSix = styled.h6`
+	font-size: 1rem;
+	color: #F06123;
+`;
 
 function SignUp() {
 	
@@ -9,9 +25,10 @@ function SignUp() {
             <Link to='/'>
 				WV
 			</Link>
-			<container>
+			<SignUpContainer>
 				<form>
-					<h1>Join WV</h1>
+					<HeaderOne>Join WV</HeaderOne>
+					<HeaderSix> Coming soon! </HeaderSix>
                     <div className='form-group'>
 						<label>First Name</label>
 						<input
@@ -23,6 +40,7 @@ function SignUp() {
 							// onChange={handleChange}
 						/>
 					</div>
+					<br></br>
                     <div className='form-group'>
 						<label>Last Name</label>
 						<input
@@ -34,7 +52,7 @@ function SignUp() {
 							// onChange={handleChange}
 						/>
 					</div>
-
+					<br></br>
 					<div className='form-group'>
 						<label>Email</label>
 						<input
@@ -67,7 +85,7 @@ function SignUp() {
 						
 					</div>
 				</form>
-			</container>
+			</SignUpContainer>
 		</>
 	);
 }

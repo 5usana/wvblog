@@ -35,14 +35,14 @@ function About() {
     return (
         <>
 			<NavBar />
-          	<HeaderOne>Meet Susana</HeaderOne>
+          	<HeaderOne>Hey, checkout my Github</HeaderOne>
 			<Section>
 				<MyAvatar>
 					<a href='https://www.linkedin.com/in/susanacmartins/' target='blank'>
 					<img src={susana} alt='susana avatar' />	
 					</a>
 					<MyName href='https://github.com/5usana' target='blank'>
-						Susana Martins
+						Susana
 					</MyName>
 				</MyAvatar>  
         </Section>

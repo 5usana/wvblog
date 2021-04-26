@@ -15,22 +15,19 @@
 <img src="./src/images/landingMobile.png" alt="Landing Page">
 
 ### Blog Page
-<img src="./src/images/LogEntries.png" alt="Welcome Page">
+<img src="./src/images/postings.png" alt="Blog Entries">
 
 ### Create/Pubish Entry
-<img src="./src/images/LogEntry.png" alt="Welcome Page">
-
-### Modify/Delete Entry
-<img src="./src/images/PublishEntry.png" alt="Welcome Page">
+<img src="./src/images/newPost.png" alt="Create Entry">
 
 ### About Page
-<img src="./src/images/BigBrainers.png" alt="Welcome Page">
+<img src="./src/images/aboutMe.png" alt="About me page">
 
 ### SignUp page
-<img src="./src/images/SignUp.png" alt="Welcome Page">
+<img src="./src/images/signUp.png" alt="Sign in page">
 
 ### SignIn page
-<img src="./src/images/SignInPage.png" alt="Welcome Page">
+<img src="./src/images/signIn.png" alt="Sign up Page">
 
 
 # The Approach Taken

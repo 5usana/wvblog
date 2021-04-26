@@ -7,7 +7,6 @@
 
 # User stories
 > As a new/inspired blogger, I want the ease of documenting my thoughts without the pressure of writing an entire blog
-
 > As a new/inspired blogger, I would like to see my entries both individually and in a log.
 # ScreenShots
 

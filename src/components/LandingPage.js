@@ -21,11 +21,13 @@ const HeaderOne = styled.h1`
 	display: left inline;
     text-align: left;
     margin: 0;
+    margin-left: 25px;
 `;
 const HeaderTwo = styled.h2`
 	font-size: 1.8rem;
 	display: left inline;
     text-align: left;
+    margin-left: 25px;
 `;
 
 

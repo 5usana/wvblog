@@ -1,4 +1,4 @@
-# WV Word Vomit Blog app
+# WV Word Vomit Blog
 <img src="./src/images/LandingDesktop.png" alt="Landing Page">
 
 ### Project 4 for General Assembly's remote Software Engineering Immersive program
